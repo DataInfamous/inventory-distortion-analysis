@@ -1,0 +1,84 @@
+Inventory Distortion Synthetic Dataset
+=====================================
+
+This file documents the fields used in the synthetic dataset for the
+Inventory Distortion Analysis project.
+
+Dataset Purpose
+---------------
+The dataset models how SSCC labeling errors in automated receiving
+systems can temporarily distort inventory records before reconciliation.
+
+The data is synthetic and created for demonstration of operations
+analytics techniques.
+
+Field Definitions
+-----------------
+
+shipment_id
+Unique identifier representing a shipment.
+
+sku_id
+Identifier for the product SKU.
+
+site_type
+Operational classification of the receiving site.
+Examples: Standard, High-compliance.
+
+process_path
+Receiving workflow used.
+Examples: Automated (SSCC), Manual.
+
+error_type
+Type of SSCC labeling error detected.
+Examples:
+Correct
+SSCC Wrong Item
+SSCC Wrong Qty
+SSCC Wrong Item + Qty
+
+item_mismatch
+Binary indicator showing whether the item received differed from the
+expected SKU (1 = mismatch, 0 = correct).
+
+final_received
+Number of units verified and retained after physical reconciliation.
+
+overaged_units
+Units incorrectly added to system inventory due to SSCC mislabeling.
+
+unfilled_units
+Units expected but not physically present during decant verification.
+
+initial_units
+Units the system believed it received before reconciliation.
+
+unreceived_units
+Units that had to be explicitly unreceived to correct the system record.
+
+unit_cost
+Synthetic per-unit cost used for valuation analysis.
+
+initial_value
+Value of inventory according to the system before correction.
+
+final_value
+Value of inventory after reconciliation.
+
+value_distortion
+Difference between initial_value and final_value.
+
+unreceived_value
+Monetary value of units that were unreceived.
+
+correction_minutes_est
+Estimated time required to investigate and correct the issue.
+
+labor_cost_est_at_$30hr
+Estimated labor cost assuming $30/hour.
+
+hazard_flag
+Indicates hazardous material classification.
+
+compliance_hold
+Indicates shipments that triggered compliance review.
