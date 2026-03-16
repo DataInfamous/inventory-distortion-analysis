@@ -6,7 +6,16 @@ This project analyzes **inventory distortion caused by SSCC receiving errors in 
 
 Using **Power BI**, the dashboard visualizes total distortion, error types, and operational relationships between **unreceived units** and **financial loss**.
 
+
+
+
+## Dashboard Preview
+
+![Power BI Dashboard](dashboard_preview.png)
+
+
 ---
+
 
 ## Key Questions
 
@@ -61,4 +70,20 @@ The dataset represents simulated warehouse receiving data and includes variables
 - `value_distortion`
 - `correction_minutes_est`
 
+
 These variables allow analysis of both **financial** and **operational impacts** of receiving errors.
+
+
+## Operational Insights
+
+Analysis of the simulated receiving dataset highlights several operational patterns relevant to warehouse inventory control.
+
+- **Higher distortion values** are associated with shipments containing large numbers of **unreceived units**, suggesting breakdowns in SSCC validation during the receiving process.
+
+- **Standard sites** show higher overall distortion compared to **high-compliance sites**, indicating that stricter operational controls may reduce inventory discrepancies.
+
+- Certain **error types contribute disproportionately** to financial distortion, especially when **high-cost units** are involved.
+
+- The analysis suggests that **receiving errors involving high-value SKUs amplify financial risk**, even when the unit count is relatively small.
+
+These findings demonstrate how operational errors in automated receiving systems can translate into measurable financial distortion and highlight the importance of **SSCC validation, process controls, and compliance monitoring** within warehouse operations.
