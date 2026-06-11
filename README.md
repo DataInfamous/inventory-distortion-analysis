@@ -8,6 +8,8 @@ This project models inventory distortion caused by SSCC mislabeling during autom
 ![Power BI Dashboard](https://raw.githubusercontent.com/DataInfamous/inventory-distortion-analysis/main/powerbi/dashboard_preview.png)
 
 ## Dataset
+> **Note:** All data in this project is synthetic and does not represent actual shipment records, SKUs, or operational data from any organization.
+
 The dataset contains synthetic shipment records including:
 - shipment_id
 - sku_id
